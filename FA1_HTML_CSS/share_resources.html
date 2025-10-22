@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Share Resources</title>
+        <link rel="stylesheet" href="share_resources.css">
+        <link rel="stylesheet" type="text/css" href="nav_footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img id="logo-img" src="images/CTU_buddy_logo.jpeg" height="100" width="200">
+            </div>
+            <div class="nav-items">
+                    <a href="index.html" ><img src="images/home.png" height="25" width="25"></a>
+                    <a href="timetable.html">Timetable</a>
+                    <a href="discussion.html">Discussion</a>
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="ContactUs.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+
+    <div class="container">
+        <h1>Share Resources</h1>
+         
+                <!-- Upload Section -->
+        <div class="upload-section">
+            <h3>Search & Upload Your Resources</h3>
+            <form id="uploadForm">
+                <input type="text" id="categoryInput" placeholder="Enter category (e.g., RD412, CWD412, etc.)" required>
+                <input type="file" id="fileInput" accept=".pdf" required>
+                <button type="submit">Upload Resource</button>
+            </form>
+        </div>
+     
+            <!-- Resources Section -->
+        <div class="resources-section">
+                <h2>Available Resources</h2>
+                <div id="resourceList" class="resource-list">
+                <!-- Resources will be dynamically added here -->
+                </div>
+        </div>
+    </div><br><br>
+     
+    <!-- Adding a Footer -->
+    <footer>
+        <div class="footer-content">
+            <img id="logo-img" src="images/CTU_buddy_logo.jpeg" height="70" width="140"><br><br>
+            <p>&copy; 2024 CTU-Buddy. All rights reserved.</p>
+            <br>
+            <p> 
+                <strong>Locations:</strong>
+                <br>
+                <span>Auckland Park |   Boksburg  | Pretoria    |   Roodepoort  |   Vereeniging |   Bloemfontein    |   Cape Town   |   Stellenbosch    |   Port Elizabeth    |   Potchefstroom   |   Durban  | Durnacol  |   Polokwane
+            </p>
+            <br>
+            <p> Created  By: Onthatile Mashego  |  Student Number: 2******3  |  CWD412 FA1 2024</p>
+            <div class="social-media">
+                <a href="https://web.facebook.com/CTUTrainingSolutions?_rdc=1&_rdr" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://x.com/CTU_Chatz" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/ctutrainingsolutions/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/user/1987ctu" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.linkedin.com/company/ctu-training-solutions-pty-ltd/" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="share_resources.js"></script>
+</body>
+</html>

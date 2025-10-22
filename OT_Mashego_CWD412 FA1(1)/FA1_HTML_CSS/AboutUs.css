@@ -1,0 +1,307 @@
+/*Navigation Bar*/
+#logo-img{
+    border-radius: 200px;
+}
+nav{
+    background-color: #FFCC00;
+    margin-bottom: -10px;
+}
+nav.navbar {
+  display: flex;
+  justify-content: space-between; /* Distributes space between the logo and nav items */
+  align-items: center; /* Vertically centers items */
+  padding: 10px 20px; /* Adds padding around the nav bar */
+  margin-top: -10px;
+ }
+
+.navbar a:hover{
+    background-color: #f2dcb0;
+    padding: 10px;
+    border-radius: 6px;
+    color: #a65317;
+    margin-bottom: -800px;
+}
+
+.navbar .logo {
+  flex: 1; /* Allows the logo to take up available space */
+  margin-left: 40px;
+}
+
+.navbar .nav-items {
+  display: flex;
+  flex: 2; /* Allows the nav items to take up available space */
+  justify-content: center; /* Centers the nav items horizontally */
+}
+
+.navbar .nav-items a {
+  margin: 0 20px; /* Space between each nav item */
+  text-decoration: none; /* Removes underline from links */
+  color: #990000; /* Text color for nav items */
+  font-size: 15px; /* Font size for nav items */
+  text-transform: uppercase; /* Makes nav item text uppercase */
+}
+
+
+
+/* Main content area */
+main {
+    flex: 1; /* Allows the main content to grow and push the footer to the bottom */
+    padding: 20px;
+}
+
+/* Set default font and background color */
+body {
+    /*font-family: Arial, sans-serif;*/
+    background-color: #fffbea;
+    color: #333;
+}
+
+h1{
+    color: #990000;
+    margin-left: 30px;
+    font-size: -webkit-xxx-large;
+}
+
+h2{
+    color: #990000;
+    font-size: xx-large;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wrapped{
+    display: flex;
+
+}
+.box{
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: #FFCC00;
+    border-radius: 60px;
+    border: 10px solid #990000;
+    height: 300px;
+    width: 400px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    padding: 20px;
+    overflow: auto;
+}
+
+
+/* Mission Statement */
+.mission {
+    margin-bottom: 40px;
+}
+
+.mission h1 {
+    color: #007BFF;
+}
+
+/* Development History */
+.development-history {
+    margin-bottom: 40px;
+    overflow: auto;
+}
+
+.development-history h2 {
+    color: #990000;
+}
+
+.development-history ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Team Profiles */
+.profile {
+    display: flex;
+    align-items: center;
+    background-color: #990000;
+    border-radius: 60px;
+    border: 10px solid #FFCC00;
+    overflow: auto;
+}
+
+.profile img {
+    margin-left: 80px;
+    margin-right: 40px;
+    border-radius: 50%;
+    width:300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-info {
+    padding: 80px;
+
+}
+
+.profile-info h3 {
+    margin: 0;
+    color: #FFCC00;
+    font-weight: bold;
+}
+
+.profile h4 {
+    color: #FFCC00;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #fffbea;
+}
+
+/* Footer styling */
+footer {
+    background-color: #FFCC00;
+    color: #990000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content a {
+    color: #990000;
+    text-decoration: none;
+}
+
+.social-media {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    /*social media icons*/
+.fa {
+  padding: 50px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  overflow: auto;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+}
+
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    .container, .wrapper {
+        margin: 0 2%;
+        padding: 1rem;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .nav-items a {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    .content, .social-media {
+        flex-direction: column;
+    }
+}
+
+/* Media Queries for very small screens */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 80%;
+    }
+
+    .container, .wrapper {
+        margin: 0 1%;
+        padding: 0.5rem;
+    }
+
+    .nav-items a {
+        font-size: 0.8rem;
+    }
+
+    .content, .profile, .wrapped, body, .social-media {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,277 @@
+/*Navigation Bar*/
+#logo-img{
+    border-radius: 200px;
+}
+nav{
+    background-color: #FFCC00;
+    margin-bottom: -10px;
+}
+nav.navbar {
+  display: flex;
+  justify-content: space-between; /* Distributes space between the logo and nav items */
+  align-items: center; /* Vertically centers items */
+  padding: 10px 20px; /* Adds padding around the nav bar */
+  margin-top: -10px;
+ }
+
+.navbar a:hover{
+    background-color: #f2dcb0;
+    padding: 10px;
+    border-radius: 6px;
+    color: #a65317;
+    margin-bottom: -800px;
+
+}
+
+.navbar .logo {
+  flex: 1; /* Allows the logo to take up available space */
+  margin-left: 40px;
+}
+
+.navbar .nav-items {
+  display: flex;
+  flex: 2; /* Allows the nav items to take up available space */
+  justify-content: center; /* Centers the nav items horizontally */
+}
+
+.navbar .nav-items a {
+  margin: 0 20px; /* Space between each nav item */
+  text-decoration: none; /* Removes underline from links */
+  color: #990000; /* Text color for nav items */
+  font-size: 15px; /* Font size for nav items */
+  text-transform: uppercase; /* Makes nav item text uppercase */
+}
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: -webkit-xxx-large;
+    margin-left: 30px;
+}
+
+h2{
+    font-size: xx-large;
+    margin-left: 30px;
+}
+h3{
+    margin-left: 30px;
+}
+
+/* Set default font and background color */
+body {
+    /*font-family: Arial, sans-serif;*/
+    background-color: #fffbea;
+    color: #990000;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ 
+/* Upload Section */
+.upload-section {
+    margin-bottom: 30px;
+}
+ 
+.upload-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.upload-section input[type="text"],
+.upload-section input[type="file"] {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #FFCC00;
+    border-radius: 5px;
+}
+ 
+.upload-section button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #990000;
+    border: none;
+    color: #fffbea;
+    cursor: pointer;
+}
+ 
+.upload-section button:hover {
+    background-color: #9c424f;
+}
+ 
+/* Resources Section */
+.resources-section {
+    margin-top: 30px;
+}
+ 
+.resources-section h2 {
+    margin-bottom: 20px;
+}
+ 
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.resource-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+ 
+/* Footer styling */
+footer {
+    background-color: #FFCC00;
+    color: #990000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-content a {
+    color: #990000;
+    text-decoration: none;
+}
+
+.social-media {
+    margin-top: 10px;
+
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    /*social media icons*/
+.fa {
+  padding: 50px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+}
+
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    .container, .wrapper {
+        margin: 0 2%;
+        padding: 1rem;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .nav-items a {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    .content, .social-media {
+        flex-direction: column;
+    }
+}
+
+/* Media Queries for very small screens */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 80%;
+    }
+
+    .container, .wrapper {
+        margin: 0 1%;
+        padding: 0.5rem;
+    }
+
+    .nav-items a {
+        font-size: 0.8rem;
+    }
+
+    .content, .social-media {
+        flex-direction: column;
+    }
+}

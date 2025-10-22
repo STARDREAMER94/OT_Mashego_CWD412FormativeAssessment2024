@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Page</title>
+    <link rel="stylesheet" href="discussion.css">
+    <link rel="stylesheet" type="text/css" href="nav_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img id="logo-img" src="images/CTU_buddy_logo.jpeg" height="100" width="200">
+            </div>
+            <div class="nav-items">
+                    <a href="index.html" ><img src="images/home.png" height="25" width="25"></a>
+                    <a href="timetable.html">Timetable</a>
+                    <a href="share_resources.html">Share Resources</a>
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="ContactUs.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <center><h1>Discussion Forum</h1></center><br>
+        <section id="post-question">
+            <h2>Post a Question</h2>
+            <form id="question-form">
+                <textarea id="question-text" placeholder="Ask your question here..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <br><section id="discussion-thread">
+            <h2>Discussion Threads</h2>
+            <div id="threads">
+                <!-- Threads will be dynamically inserted here -->
+            </div>
+        </section><br>
+
+        <br><section id="profile">
+            <h2>User Profile</h2>
+            <br><p id="user-info">Username: <span id="username">Guest</span></p><br>
+            <button id="login">Login</button>
+            <button id="logout" style="display: none;">Logout</button>
+        </section><br>
+
+        <br><section id="moderation">
+            <h2>Moderation Tools</h2>
+            <br><button id="clear-all">Clear All Threads</button>
+        </section>
+    </main>
+
+        <footer>
+        <div class="footer-content">
+            <img id="logo-img" src="images/CTU_buddy_logo.jpeg" height="70" width="140"><br><br>
+            <p>&copy; 2024 CTU-Buddy. All rights reserved.</p>
+            <br>
+            <p> 
+                <strong>Locations:</strong>
+                <br>
+                <span>Auckland Park |   Boksburg  | Pretoria    |   Roodepoort  |   Vereeniging |   Bloemfontein    |   Cape Town   |   Stellenbosch    |   Port Elizabeth    |   Potchefstroom   |   Durban  | Durnacol  |   Polokwane
+            </p>
+            <br>
+            <p> Created  By: Onthatile Mashego  |  Student Number: 2******3  |  CWD412 FA1 2024</p>
+            <div class="social-media">
+                <a href="https://web.facebook.com/CTUTrainingSolutions?_rdc=1&_rdr" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://x.com/CTU_Chatz" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/ctutrainingsolutions/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/user/1987ctu" target="_blank" class="fa fa-youtube"></a>
+                <a href="https://www.linkedin.com/company/ctu-training-solutions-pty-ltd/" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="discussion.js"></script>
+</body>
+</html>

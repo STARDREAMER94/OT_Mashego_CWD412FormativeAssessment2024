@@ -1,0 +1,403 @@
+/* Header styling */
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Navigation Bar*/
+#logo-img{
+    border-radius: 200px;
+}
+
+nav{
+    background-color: #FFCC00;
+    margin-bottom: -10px;
+}
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between; /* Distributes space between the logo and nav items */
+  align-items: center; /* Vertically centers items */
+  padding: 10px 20px; /* Adds padding around the nav bar */
+  margin-top: -10px;
+ }
+
+.navbar a:hover{
+    background-color: #f2dcb0;
+    padding: 10px;
+    border-radius: 6px;
+    color: #a65317;
+    margin-bottom: -800px;
+
+}
+
+.navbar .logo {
+  flex: 1; /* Allows the logo to take up available space */
+  margin-left: 40px;
+}
+
+.navbar .nav-items {
+  display: flex;
+  flex: 2; /* Allows the nav items to take up available space */
+  justify-content: center; /* Centers the nav items horizontally */
+}
+
+.navbar .nav-items a {
+  margin: 0 20px; /* Space between each nav item */
+  text-decoration: none; /* Removes underline from links */
+  color: #990000; /* Text color for nav items */
+  font-size: 15px; /* Font size for nav items */
+  text-transform: uppercase; /* Makes nav item text uppercase */
+}
+
+.container{
+  display: flex;
+  background: #fca4b4
+}
+
+.wrapper{
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: left;
+  padding: 20px;
+  color: #fffbea;
+}
+
+#text-edu{
+  flex: 2;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left; 
+}
+
+#container-image{
+  border-radius: 30px;
+}
+
+#container-text{
+  margin-right: 40px;
+}
+
+
+
+ /* Hero section styling */
+#hero {
+    background: url('images/home_page.webp') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fffbea;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+} 
+
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: -webkit-xxx-large;
+}
+h2{
+    font-size: xx-large;
+}
+h3{
+    font-size: large;
+}
+
+
+/* Set default font and background color */
+body {
+    /*font-family: Arial, sans-serif;*/
+    background-color: #fffbea;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content area */
+main {
+    flex: 1; /* Allows the main content to grow and push the footer to the bottom */
+    padding: 20px;
+}
+
+form{
+    border: 10px solid;
+    border-radius: 100px;
+    width: 45%;
+    height: 50%;
+    border-color: #FFCC00;
+    padding: 22px 88px;
+    margin: 10px;
+    background-color: #990000;
+    color: #fffbea;
+    
+}
+
+
+
+
+/* Contact Form */
+.labels{
+    text-align: left;
+}
+
+.contact-form {
+    margin-bottom: 40px;
+}
+
+.contact-form h1 {
+    color: #990000;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #FFCC00;
+    color: #990000;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid  #fffbea;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+#book{
+    background-color: #990000;
+    border: 5px solid #FFCC00;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: #fffbea;
+}
+
+/* Map Location */
+.map-location {
+    margin-bottom: 40px;
+}
+
+.map-location h2 {
+    color: #990000;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h2 {
+    color: #990000;
+}
+
+.contact-info a {
+    color: #90750b;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #FFCC00;
+    color: #990000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content a {
+    color: #990000;
+    text-decoration: none;
+}
+
+.social-media {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    /*social media icons*/
+.fa {
+  padding: 50px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  width: 50%; /* Width relative to the container */
+    overflow: auto;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+}
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    .container, .wrapper {
+        margin: 0 2%;
+        padding: 1rem;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .nav-items a {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    .footer-content, .social-media{
+        flex-direction: column;
+    }
+}
+
+/* Media Queries for very small screens */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 80%;
+    }
+
+    .container, .wrapper {
+        margin: 0 1%;
+        padding: 0.5rem;
+    }
+
+    .nav-items a {
+        font-size: 0.8rem;
+    }
+
+    .footer-content, .social-media {
+        flex-direction: column;
+    }
+}
